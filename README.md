@@ -59,6 +59,8 @@ npm install
 - react-native-screens: ~4.4.0
 - react-native-vector-icons: ^10.2.0
 - react-native-svg: 15.8.0
+- npx expo install react-native-maps
+
 
 De kan også ses nederst i README filen.
 
