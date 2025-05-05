@@ -122,6 +122,87 @@ const sharedStyles = StyleSheet.create({
     color: '#222',
     fontWeight: '600',
   },
+  footer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 20,
+    marginBottom: 20,
+    paddingBottom: 20,
+  },
+  
+  footerItemWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: 5,
+  },
+  
+  footerItem: {
+    fontSize: 16,
+    color: 'black',
+    paddingHorizontal: 5,
+  },
+  
+  footerDivider: {
+    marginHorizontal: 5,
+    fontSize: 16,
+    color: '#999',
+  },
+  mapHeader: {
+    padding: 16,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'row',
+    paddingVertical: 12,
+  },
+  
+  mapHeaderTitle: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: '#1D2A32',
+  },
+  
+  mapBackText: {
+    color: '#e67000',
+    fontWeight: '600',
+    fontSize: 16,
+  },
+  
+  mapCategoryButton: {
+    fontSize: 16,
+    color: '#075eec',
+    fontWeight: '600',
+  },
+  
+  mapContainer: {
+    flex: 1,
+    position: 'relative',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 100, 
+  },
+  
+  mapImage: {
+    width: '90%',
+    height: '150%',
+  },
+  
+  mapMarker: {
+    position: 'absolute',
+    width: 30,
+    height: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  
+  mapMarkerDot: {
+    width: 16,
+    height: 16,
+    borderRadius: 8,
+    backgroundColor: 'blue',
+  },
+  
 });
 
 export default sharedStyles;

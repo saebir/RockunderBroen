@@ -47,10 +47,13 @@ export default function HomeScreen({ navigation }) {
   const handlePress = (label) => {
     if (label === 'Program') {
       navigation.navigate('Program');
+    } else if (label === 'Kort') {
+      navigation.navigate('Map'); // 👈 Navigér til MapScreen
     } else {
       Alert.alert(`Du trykkede på: ${label}`);
     }
   };
+
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
