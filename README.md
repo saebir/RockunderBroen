@@ -11,7 +11,7 @@ Dette er en mobilapp lavet i React Native med Expo, som er udviklet til "Rock un
 - JavaScript
 - Visual Studio Code
 
-## Funktioner
+## Sikkerhedsfunktioner
 
 - Login med email og adgangskode
 - Mulighed for at oprette konto og nulstille adgangskode
@@ -23,78 +23,32 @@ Dette er en mobilapp lavet i React Native med Expo, som er udviklet til "Rock un
 
 ## Sådan kører du projektet på din egen computer
 
-### 1. Installer Node.js
-
-Download og installer Node.js fra https://nodejs.org(Node.js indeholder også npm, som vi skal bruge)
-
-### 2. Installer Expo CLI (kun første gang)
-
-```bash
-npm install -g expo-cli
+### 1.Klon projektet og åbn det i VS Code
+```
+git clone https://github.com/din-bruger/pantrypal.git
+cd pantrypa
 ```
 
-### 3. Klon projektet fra GitHub
+### 2.  Installer live server (hvis du bruger VS Code)
 
-```bash
-git clone https://github.com/saebir/RockunderBroen.git
-cd RockunderBroen
-```
+Brug udvidelsen "Live Server" til at køre siden lokalt i browseren.
 
-### 4. Installer projektets afhængigheder
+### 3. Firebase setup
 
-```bash
-npm install
-```
-- @react-navigation/native: ^7.1.6
-- @react-navigation/native-stack: ^7.3.10
-- @supabase/supabase-js: ^2.49.4
-- expo: ~52.0.43
-- expo-linking: ~7.0.5
-- expo-status-bar: ~2.0.1
-- react: 18.3.1
-- react-native: 0.76.9
-- react-native-gesture-handler: ~2.20.2
-- react-native-reanimated: ~3.16.1
-- react-native-safe-area-context: 4.12.0
-- react-native-screens: ~4.4.0
-- react-native-vector-icons: ^10.2.0
-- react-native-svg: 15.8.0
-- npx expo install react-native-maps
+- Opret et Firebase-projekt
+- Aktiver Authentication (Email/Password + evt. Google)
+- Aktiver Firestore Database og opret sikkerhedsregler
+- Tilføj dine Firebase-config-oplysninger i firebase.js
 
+### 4. Kør projektet
 
-De kan også ses nederst i README filen.
+Åbn index.html i browseren via Live Server.
 
-### 5. Start appen med Expo
+## Vigtigt omkring billeder og indhold
+Alle billeder brugt i projektet er enten egne, fra frie billedsider (fx Unsplash/Pexels), eller licensgodkendte. Projektet er til læring og visning – ikke kommerciel brug.
 
-```bash
-npx expo start
-```
+## Fremtidige forbedringer
+- Automatisk logout ved inaktivitet
+- Sikker backend med rollebaseret kontrol
+- Upload af egne billeder med kontrol
 
-Når Metro bundler åbner, kan du vælge at:
-
-- Scanne QR-koden med din mobil
-- Eller starte appen i en Android/iOS-simulator (hvis opsat)
-
-## Kommandoer brugt under opsætning
-
-- npx create-expo-app@latest RockunderBroen --template blank
-- cd RockunderBroen
-
-### Navigation:
-- npx expo install @react-navigation/native
-- npx expo install react-native-screens react-native-safe-area-context
-- npx expo install react-native-gesture-handler
-- npx expo install react-native-reanimated
-- npx expo install react-native-vector-icons
-- npx expo install @react-navigation/native-stack
-
-### Deep link (bruges til reset-password via email link)
-- npx expo install expo-linking
-
-### Supabase:
-- npm install @supabase/supabase-js
-
-### Ikoner:
-- npx expo install react-native-svg
-
-Appen er stadig under udvikling og kan udvides med flere funktioner som backstage-adgang, kort og nyheder. Designet er baseret på orange og sort farvetema som matcher festivalens stil.
